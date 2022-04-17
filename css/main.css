@@ -4,9 +4,10 @@ body{
 }
 
 textarea{
-    background-color: #37373D!important;
+    background-color: #1B2C3D!important;
     border:none!important;
-    color:#8097A0!important; 
+    color:#8097A0!important;
+    font-size: 18px!important;
 }
 
 textarea:hover{
@@ -63,4 +64,10 @@ textarea:hover{
     background-color: #1D9BF0;
     padding: 5px;
     border-radius: 2px;
+}
+
+.flex-in-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

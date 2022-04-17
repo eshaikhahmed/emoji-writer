@@ -8,12 +8,22 @@ include('header.php');
 <section class="post-writer-section">
     <div class="fluid-container space-manager">
             <h5 class="new-h1">
-                Write your heart out ❤️  
+                &nbsp;  
             </h5>
             <div class="row">
                 <div class="col-md-8">
-                    <textarea class="form-control" id="post_writer" rows="10"></textarea>
-                  
+                    <textarea class="form-control" id="post_writer" rows="10" onkeyup="countWords();"></textarea>
+                    
+                    <div class="flex-in-between">
+                        <div>
+                        <button class="btn btn-primary" id="btnClipboard" style="margin-bottom:2px;" onClick="copyToClipboard()">
+                            Copy Clipboard
+                        </button>
+                        </div>
+                        <div>
+                            <span class="word-count">0</span>/1000
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4">
                     <a onclick="clean();" href="#" >Clean everything</a>
@@ -27,9 +37,7 @@ include('header.php');
     <div class="fluid-container space-manager">
         <div class="row">
         <div class="col-md-12">
-                    <button class="btn btn-primary" id="btnClipboard" style="margin-bottom:2px;" onClick="copyToClipboard()">
-                        Copy Clipboard
-                    </button>
+            
 
                     <a class="new-tab" onclick="onHeadEmoji();">😂 Head Emojis</a>
                     <a class="new-tab" onclick="onHandEmoji();">👍 Hand Emojis</a>

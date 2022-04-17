@@ -23,13 +23,18 @@ $(document).on("click",".emoji-list span", function () {
     storedEmojiArray.push(emoji);
 
     localStorage.setItem("emoji_list", JSON.stringify(storedEmojiArray));
-
+    countWords();
  });
 
  function clean(){
     // console.log('hello');
     localStorage.removeItem("emoji_list");
-    location.reload();
+    displayRecentItems();
+    refreshRecetItems();
+ }
+
+ function refreshRecetItems(){
+   $('#common_emoji_list').empty();
  }
 
  function copyToClipboard() {
@@ -46,19 +51,28 @@ $(document).on("click",".emoji-list span", function () {
     $('#btnClipboard').html('Copied');
 }
 
+function countWords(){
+   var post = $('#post_writer').val();
+   $('.word-count').html(post.length)
+}
+
  window.onload = function () { 
-    var storedEmojis = localStorage.getItem("emoji_list");
-    if(storedEmojis != null){
-        var emojiList = '';
-        storedArray = JSON.parse(storedEmojis);
-        for (const x of storedArray) { 
+    displayRecentItems();
+}
+
+ function displayRecentItems(){
+   var storedEmojis = localStorage.getItem("emoji_list");
+   if(storedEmojis != null){
+      var emojiList = '';
+      storedArray = JSON.parse(storedEmojis);
+      for (const x of storedArray) { 
             //console.log(x); 
             var common_emoji = '<span>'+x+'</span>';
             emojiList = emojiList + common_emoji;
-        }
-        $('#common_emoji_list').html(emojiList);
-    }
-}
+      }
+      $('#common_emoji_list').html(emojiList);
+   }
+ }
 
  function onHandEmoji(){
     $('.emoji-list').hide();
