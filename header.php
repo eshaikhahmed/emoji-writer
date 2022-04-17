@@ -18,7 +18,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" 
-    style="padding-top: 0px;padding-bottom: 0px;">
+    style="padding-top: 10px;padding-bottom: 10px;">
          <a class="navbar-brand" href="index.php" style="padding-bottom: 0px;
             padding-top: 0px;">
             <div style="    font-weight: bolder;
@@ -39,7 +39,11 @@
          </button>
          <div class="collapse navbar-collapse" style="flex-direction: row-reverse;" id="collapsibleNavbar">
             <ul class="navbar-nav">
-                <li class="nav-item">
+               <li class="nav-item">
+                  <a class="nav-link" href="index.php">Made by <span style="color:#007ACC;font-weight:bold;">Fact</span><span style="color:#FFFFFF;font-weight:bold;">ance</span></a>
+               </li>   
+
+               <li class="nav-item">
                   <a class="nav-link" href="index.php">
                       <span class="linkedin-show">LinkedIn</span>
 
@@ -50,9 +54,7 @@
                       <span class="twitter-show">Twitter</span>
                     </a>
                </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="index.php">Made by <span style="color:#007ACC;font-weight:bold;">Fact</span><span style="color:#FFFFFF;font-weight:bold;">ance</span></a>
-               </li>              
+                  
             </ul>
          </div>
     </nav>
