@@ -1,0 +1,66 @@
+body{
+    background-color: #1E1E1E;
+    color:#8097A0;
+}
+
+textarea{
+    background-color: #37373D!important;
+    border:none!important;
+    color:#8097A0!important; 
+}
+
+textarea:hover{
+    cursor: pointer;
+    border: 1px solid #007ACC!important;
+}
+
+.emoji-list span, .common-emoji-list span{
+    display: inline-block;
+    border: 1px solid #1C2D3E;
+    padding: 10px;
+    margin-bottom:2px;
+    font-size: 24px;
+}
+
+.common-emoji-list span:hover{
+    cursor: pointer;
+    border: 1px solid #007ACC;
+}
+
+.emoji-list span:hover{
+    cursor: pointer;
+    border: 1px solid #007ACC;
+}
+
+.new-tab{
+    margin-top:5px;
+    margin-bottom:5px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgb(0 0 0 / 26%);
+    color: #ffffff;
+    background-color: #FFB82B;
+    padding: 5px;
+    border-radius:5px;
+    height: 35px;
+}
+
+.new-tab:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.space-manager{
+    margin: 20px;
+}
+
+.linkedin-show{
+    background-color: #146CC5;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.twitter-show{
+    background-color: #1D9BF0;
+    padding: 5px;
+    border-radius: 2px;
+}
