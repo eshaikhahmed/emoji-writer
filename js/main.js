@@ -1,6 +1,8 @@
 $(document).on("click","#common_emoji_list span", function () {
     var emoji = $(this).text();
     $('#post_writer').val($('#post_writer').val()+emoji);
+    $('#post_writer').focus();
+    countWords();
 });
 
 $(document).on("click",".emoji-list span", function () {
@@ -24,6 +26,7 @@ $(document).on("click",".emoji-list span", function () {
 
     localStorage.setItem("emoji_list", JSON.stringify(storedEmojiArray));
     countWords();
+    $('#post_writer').focus();
  });
 
  function clean(){
