@@ -1,7 +1,8 @@
 $(document).on("click","#common_emoji_list span", function () {
     var emoji = $(this).text();
-    $('#post_writer').val($('#post_writer').val()+emoji);
+    //$('#post_writer').val($('#post_writer').val()+emoji);
     $('#post_writer').focus();
+    addIntoTextArea(emoji);
     countWords();
 });
 
@@ -9,7 +10,8 @@ $(document).on("click",".emoji-list span", function () {
     var emoji = $(this).text();
     // console.log('Emoji '+emoji);
     // console.log('Text area '+$('#post_writer').val() +emoji);
-    $('#post_writer').val($('#post_writer').val()+emoji);
+    //$('#post_writer').val($('#post_writer').val()+emoji);
+    addIntoTextArea(emoji);
 
     var common_emoji = '<span>'+emoji+'</span>';
     $('#common_emoji_list').html($('#common_emoji_list').html()+common_emoji);
@@ -28,6 +30,16 @@ $(document).on("click",".emoji-list span", function () {
     countWords();
     $('#post_writer').focus();
  });
+
+
+ function addIntoTextArea(myValue) {
+                var curPos =
+                    document.getElementById("post_writer").selectionStart;
+                console.log(curPos);
+                let x = $("#post_writer").val();
+                let text_to_insert = myValue;
+                $("#post_writer").val(x.slice(0, curPos) + text_to_insert + x.slice(curPos));
+}
 
  function clean(){
     // console.log('hello');
