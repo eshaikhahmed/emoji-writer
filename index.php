@@ -47,6 +47,7 @@ include('header.php');
                     <a class="new-tab" onclick="onFoodDrink();">🍓 Food & Drink</a>
                     <a class="new-tab" onclick="onTravel();">🚀 Travel & Distance</a>
                     <a class="new-tab" onclick="onSymbol();">❤️ Symbol</a>
+                    <a class="new-tab" onclick="onObject();">📢 Object</a>
                     <div class="emoji-list" id="emoji_heads">                              
                         <span>😀</span>
                         <span>😬</span>
@@ -103,6 +104,15 @@ include('header.php');
                         <span>😲</span>
                         <span>😷</span>
                         <span>😴</span>
+                        <span>🤩</span>
+                        <span>🤨</span>
+                        <span>🤯</span>
+                        <span>🤪</span>
+                        <span>🤬</span>
+                        <span>🤮</span>
+                        <span>🤫</span>
+                        <span>🤭</span>
+                        <span>🧐</span>
                         <span>💤</span>
                         <span>💩</span>
                         <span>😈</span>
@@ -121,12 +131,119 @@ include('header.php');
                         <span>🙀</span>
                         <span>😿</span>
                         <span>😾</span>
+                        <span>👶</span>
+                        <span>👦</span>
+                        <span>👧</span>
+                        <span>👨</span>
+                        <span>👩</span>
+                        <span>👴</span>
+                        <span>👵</span>
+                        <span>👨‍⚕️</span>
+                        <span>👩‍⚕️</span>
+                        <span>👨‍🎓</span>
+                        <span>👩‍🎓</span>
+                        <span>👨‍🏫</span>
+                        <span>👩‍🏫</span>
+                        <span>👨‍⚖️</span>
+                        <span>👩‍⚖️</span>
+                        <span>👨‍🌾</span>
+                        <span>👩‍🌾</span>
+                        <span>👨‍🍳</span>
+                        <span>👩‍🍳</span>
+                        <span>👨‍🔧</span>
+                        <span>👩‍🔧</span>
+                        <span>👨‍🏭</span>
+                        <span>👩‍🏭</span>
+                        <span>👨‍💼</span>
+                        <span>👩‍💼</span>
+                        <span>👨‍🔬</span>
+                        <span>👩‍🔬</span>
+                        <span>👨‍💻</span>
+                        <span>👩‍💻</span>
+                        <span>👨‍🎤</span>
+                        <span>👩‍🎤</span>
+                        <span>👨‍🎨</span>
+                        <span>👩‍🎨</span>
+                        <span>👨‍✈️</span>
+                        <span>👩‍✈️</span>
+                        <span>👨‍🚀</span>
+                        <span>👩‍🚀</span>
+                        <span>👨‍🚒</span>
+                        <span>👩‍🚒</span>
+                        <span>👮‍♂️</span>
+                        <span>🕵‍♀️</span>
+                        <span>💂‍♂️</span>
+                        <span>💂‍♀️</span>
+                        <span>👷‍♂️</span>
+                        <span>👷‍♀️</span>
+                        <span>🤴</span>
+                        <span>👸</span>
+                        <span>👳‍♂️</span>
+                        <span>👳‍♀️</span>
+                        <span>👲</span>
+                        <span>👱‍♂️</span>
+                        <span>👱‍♀️</span>
+                        <span>🤵</span>
+                        <span>👰</span>
+                        <span>🤰</span>
+                        <span>👼</span>
+                        <span>🎅</span>
+                        <span>🤶</span>
+                        <span>🙍‍♂️</span>
+                        <span>🙍‍♀️</span>
+                        <span>🙎‍♂️</span>
+                        <span>🙎‍♀️</span>
+                        <span>🙅‍♂️</span>
+                        <span>🙅‍♀️</span>
+                        <span>🙆‍♂️</span>
+                        <span>🙆‍♀️</span>
+                        <span>💁‍♂️</span>
+                        <span>💁‍♀️</span>
+                        <span>🙋‍♂️</span>
+                        <span>🙋‍♀️</span>
+                        <span>🙇‍♂️</span>
+                        <span>🙇‍♀️</span>
+                        <span>🤦‍♂️</span>
+                        <span>🤦‍♀️</span>
+                        <span>🤷‍♂️</span>
+                        <span>🤷‍♀️</span>
+                        <span>💆‍♂️</span>
+                        <span>💆‍♀️</span>
+                        <span>💇‍♂️</span>
+                        <span>💇‍♀️</span>
+                        <span>🧒</span>
+                        <span>🧑</span>
+                        <span>🧓</span>
+                        <span>🧕</span>
+                        <span>🧔</span>
+                        <span>🤱</span>
+                        <span>🧙‍♀️</span>
+                        <span>🧙‍♂️</span>
+                        <span>🧚‍♀️</span>
+                        <span>🧚‍♂️</span>
+                        <span>🧛‍♀️</span>
+                        <span>🧛‍♂️</span>
+                        <span>🧜‍♀️</span>
+                        <span>🧜‍♂️</span>
+                        <span>🧝‍♀️</span>
+                        <span>🧝‍♂️</span>
+                        <span>🧞‍♀️</span>
+                        <span>🧞‍♂️</span>
+                        <span>🧟‍♀️</span>
+                        <span>🧟‍♂️</span>
+                        <span>🧖‍♀️</span>
+                        <span>🧖‍♂️</span>
+                        <span>🧗‍♀️</span>
+                        <span>🧗‍♂️</span>
+                        <span>🧘‍♀️</span>
+                        <span>🧘‍♂️</span>
                     </div>
                     <div class="emoji-list" id="hand_emojis" style="display:none">
                         <span>🙌</span>
                         <span>👏</span>
                         <span>👋</span>
                         <span>👍</span>
+                        <span>👎</span>
                         <span>👊</span>
                         <span>✊</span>
                         <span>✌️</span>
@@ -140,6 +257,12 @@ include('header.php');
                         <span>👈</span>
                         <span>👉</span>
                         <span>🖖</span>
+                        <span>✊</span>
+                        <span>🤛</span>
+                        <span>🤜</span>
+                        <span>✍</span>
+                        <span>🤝</span>
+                        <span>💅</span>
                         <span>💪🏻</span>
                         <span>👈🏻</span>
                         <span>👉🏻</span>
@@ -180,6 +303,11 @@ include('header.php');
                         <span>🌞</span>
                         <span>🌈</span>
                         <span>🌻</span>
+                        <span>🎆</span>
+                        <span>🎇</span> 
+                        <span>🎈</span>
+                        <span>🎉</span>
+                        <span>🎊</span>
                     </div>
                     <div class="emoji-list" id="emoji_man_women" style="display:none"> 
                         <span>🚶🏼</span>
@@ -202,6 +330,85 @@ include('header.php');
                         <span>💁🏼</span>
                         <span>🙋🏼</span>
                         <span>🙇🏼</span>
+                        <span>🚶‍♂️</span>
+                        <span>🚶‍♀️</span>
+                        <span>🏃‍♂️</span>
+                        <span>🏃‍♀️</span>
+                        <span>💃</span>
+                        <span>🕺</span>
+                        <span>👯</span>
+                        <span>👯‍♂️</span>
+                        <span>👯‍♀️</span>
+                        <span>🛀</span>
+                        <span>🗣</span>
+                        <span>👤</span>
+                        <span>👥</span>
+                        <span>🤺</span>
+                        <span>🏇</span>
+                        <span>⛷</span>
+                        <span>🏂</span>
+                        <span>🏄‍♂️</span>
+                        <span>🏄‍♀️</span>
+                        <span>🚣‍♂️</span>
+                        <span>🚣‍♀️</span>
+                        <span>🏊‍♂️</span>
+                        <span>🏊‍♀️</span>
+                        <span>🏋‍♂️</span>
+                        <span>🏋‍♀️</span>
+                        <span>🚴‍♂️</span>
+                        <span>🚴‍♀️</span>
+                        <span>🚵‍♂️</span>
+                        <span>🚵‍♀️</span>
+                        <span>🏎</span>
+                        <span>🏍</span>
+                        <span>🤸‍♂️</span>
+                        <span>🤸‍♀️</span>
+                        <span>🤼</span>
+                        <span>🤼‍♂️</span>
+                        <span>🤼‍♀️</span>
+                        <span>🤽‍♂️</span>
+                        <span>🤽‍♀️</span>
+                        <span>🤾‍♂️</span>
+                        <span>🤾‍♀️</span>
+                        <span>🤹‍♂️</span>
+                        <span>🤹‍♀️</span>
+                        <span>👫</span>
+                        <span>👬</span>
+                        <span>👭</span>
+                        <span>💏</span>
+                        <span>👩‍❤️‍💋‍👨</span>
+                        <span>👨‍❤️‍💋‍👨</span>
+                        <span>👩‍❤️‍💋‍👩</span>
+                        <span>💑</span>
+                        <span>👩‍❤️‍👨</span>
+                        <span>👨‍❤️‍👨</span>
+                        <span>👩‍❤️‍👩</span>
+                        <span>👪</span>
+                        <span>👨‍👩‍👦</span>
+                        <span>👨‍👩‍👧</span>
+                        <span>👨‍👩‍👧‍👦</span>
+                        <span>👨‍👩‍👦‍👦</span>
+                        <span>👨‍👩‍👧‍👧</span>
+                        <span>👨‍👨‍👦</span>
+                        <span>👨‍👨‍👧</span>
+                        <span>👨‍👨‍👧‍👦</span>
+                        <span>👨‍👨‍👦‍👦</span>
+                        <span>👨‍👨‍👧‍👧</span>
+                        <span>👩‍👩‍👦</span>
+                        <span>👩‍👩‍👧</span>
+                        <span>👩‍👩‍👧‍👦</span>
+                        <span>👩‍👩‍👦‍👦</span>
+                        <span>👩‍👩‍👧‍👧</span>
+                        <span>👨‍👦</span>
+                        <span>👨‍👦‍👦</span>
+                        <span>👨‍👧</span>
+                        <span>👨‍👧‍👦</span>
+                        <span>👨‍👧‍👧</span>
+                        <span>👩‍👦</span>
+                        <span>👩‍👦‍👦</span>
+                        <span>👩‍👧</span>
+                        <span>👩‍👧‍👦</span>
+                        <span>👩‍👧‍👧</span>
                         <span>🚶🏽</span>
                         <span>🏃🏽</span>
                         <span>💃🏽</span>
@@ -447,6 +654,16 @@ include('header.php');
                         <span>🚚</span>
                         <span>🚛</span>
                         <span>🚜</span>
+                        <span>🌍</span>
+                        <span>🌎</span>
+                        <span>🌏</span>
+                        <span>🌐</span>
+                        <span>🗺</span>
+                        <span>🗾</span>
+                        <span>🏔</span>
+                        <span>⛰</span>
+                        <span>🗻</span>
+                        <span>🌋</span>
                         <span>🚲</span>
                         <span>🚨</span>
                         <span>🚔</span>
@@ -757,10 +974,183 @@ include('header.php');
                         <span>🕦</span>
                         <span>🕧</span>
                     </div>
+                    <div class="emoji-list" id="real_object_emojis" style="display:none;">
+                        <span>🔇</span>
+                        <span>🔈</span>
+                        <span>🔉</span>
+                        <span>🔊</span>
+                        <span>📢</span>
+                        <span>📣</span>
+                        <span>📯</span>
+                        <span>🔔</span>
+                        <span>🔕</span>
+                        <span>🎼</span>
+                        <span>🎵</span>
+                        <span>🎶</span>
+                        <span>🎙</span>
+                        <span>🎚</span>
+                        <span>🎛</span>
+                        <span>🎤</span>
+                        <span>🎧</span>
+                        <span>📻</span>
+                        <span>🎷</span>
+                        <span>🎸</span>
+                        <span>🎹</span>
+                        <span>🎺</span>
+                        <span>🎻</span>
+                        <span>🥁</span>
+                        <span>📱</span>
+                        <span>📲</span>
+                        <span>☎</span>
+                        <span>📞</span>
+                        <span>📟</span>
+                        <span>📠</span>
+                        <span>🔋</span>
+                        <span>🔌</span>
+                        <span>💻</span>
+                        <span>🖥</span>
+                        <span>🖨</span>
+                        <span>⌨</span>
+                        <span>🖱</span>
+                        <span>🖲</span>
+                        <span>💽</span>
+                        <span>💾</span>
+                        <span>💿</span>
+                        <span>📀</span>
+                        <span>🎥</span>
+                        <span>🎞</span>
+                        <span>📽</span>
+                        <span>🎬</span>
+                        <span>📺</span>
+                        <span>📷</span>
+                        <span>📸</span>
+                        <span>📹</span>
+                        <span>📼</span>
+                        <span>🔍</span>
+                        <span>🔎</span>
+                        <span>🕯</span>
+                        <span>💡</span>
+                        <span>🔦</span>
+                        <span>🏮</span>
+                        <span>📔</span>
+                        <span>📕</span>
+                        <span>📖</span>
+                        <span>📗</span>
+                        <span>📘</span>
+                        <span>📙</span>
+                        <span>📚</span>
+                        <span>📓</span>
+                        <span>📒</span>
+                        <span>📃</span>
+                        <span>📜</span>
+                        <span>📄</span>
+                        <span>📰</span>
+                        <span>🗞</span>
+                        <span>📑</span>
+                        <span>🔖</span>
+                        <span>🏷</span>
+                        <span>💰</span>
+                        <span>💴</span>
+                        <span>💵</span>
+                        <span>💶</span>
+                        <span>💷</span>
+                        <span>💸</span>
+                        <span>💳</span>
+                        <span>💹</span>
+                        <span>💱</span>
+                        <span>💲</span>
+                        <span>✉</span>
+                        <span>📧</span>
+                        <span>📨</span>
+                        <span>📩</span>
+                        <span>📤</span>
+                        <span>📥</span>
+                        <span>📦</span>
+                        <span>📫</span>
+                        <span>📪</span>
+                        <span>📬</span>
+                        <span>📭</span>
+                        <span>📮</span>
+                        <span>🗳</span>
+                        <span>✏</span>
+                        <span>✒</span>
+                        <span>🖋</span>
+                        <span>🖊</span>
+                        <span>🖌</span>
+                        <span>🖍</span>
+                        <span>📝</span>
+                        <span>💼</span>
+                        <span>📁</span>
+                        <span>📂</span>
+                        <span>🗂</span>
+                        <span>📅</span>
+                        <span>📆</span>
+                        <span>🗒</span>
+                        <span>🗓</span>
+                        <span>📇</span>
+                        <span>📈</span>
+                        <span>📉</span>
+                        <span>📊</span>
+                        <span>📋</span>
+                        <span>📌</span>
+                        <span>📍</span>
+                        <span>📎</span>
+                        <span>🖇</span>
+                        <span>📏</span>
+                        <span>📐</span>
+                        <span>✂</span>
+                        <span>🗃</span>
+                        <span>🗄</span>
+                        <span>🗑</span>
+                        <span>🔒</span>
+                        <span>🔓</span>
+                        <span>🔏</span>
+                        <span>🔐</span>
+                        <span>🔑</span>
+                        <span>🗝</span>
+                        <span>🔨</span>
+                        <span>⛏</span>
+                        <span>⚒</span>
+                        <span>🛠</span>
+                        <span>🗡</span>
+                        <span>⚔</span>
+                        <span>🔫</span>
+                        <span>🏹</span>
+                        <span>🛡</span>
+                        <span>🔧</span>
+                        <span>🔩</span>
+                        <span>⚙</span>
+                        <span>🗜</span>
+                        <span>⚖</span>
+                        <span>🔗</span>
+                        <span>⛓</span>
+                        <span>⚗</span>
+                        <span>🔬</span>
+                        <span>🔭</span>
+                        <span>📡</span>
+                        <span>💉</span>
+                        <span>💊</span>
+                        <span>🚪</span>
+                        <span>🛏</span>
+                        <span>🛋</span>
+                        <span>🚽</span>
+                        <span>🚿</span>
+                        <span>🛁</span>
+                        <span>🛒</span>
+                        <span>🚬</span>
+                        <span>⚰</span>
+                        <span>⚱</span>
+                        <span>🗿</span>
+                    </div>
 
                 </div>
         </div>
     </div>
 </section>
-
+<section class="fluid-container space-manager">
+    <p>Sometimes weird looking screen or some issue ? Cache can be culprit - Hard refresh<br/> 
+        <span><strong>Windows</strong> Ctrl + Shift + R</span><br/> 
+        <span><strong>Mac</strong> Command + Shift + R</span>
+    </p>
+</section>
 <script src="js/main.js"></script>

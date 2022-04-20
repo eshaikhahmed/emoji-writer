@@ -23,7 +23,7 @@ $(document).on("click",".emoji-list span", function () {
     } else {
         storedEmojiArray = JSON.parse(storedEmojis);
     }
-    console.log(storedEmojis);
+    //console.log(storedEmojis);
     storedEmojiArray.push(emoji);
 
     localStorage.setItem("emoji_list", JSON.stringify(storedEmojiArray));
@@ -33,12 +33,15 @@ $(document).on("click",".emoji-list span", function () {
 
 
  function addIntoTextArea(myValue) {
-                var curPos =
-                    document.getElementById("post_writer").selectionStart;
-                console.log(curPos);
-                let x = $("#post_writer").val();
-                let text_to_insert = myValue;
-                $("#post_writer").val(x.slice(0, curPos) + text_to_insert + x.slice(curPos));
+   var curPos =
+      document.getElementById("post_writer").selectionStart;
+   //console.log(curPos);
+   let x = $("#post_writer").val();
+   let text_to_insert = myValue;
+   $("#post_writer").val(x.slice(0, curPos) + text_to_insert + x.slice(curPos));
+
+   cusorposion = x.slice(0, curPos) + text_to_insert;
+   document.getElementById("post_writer").setSelectionRange(cusorposion.length, cusorposion.length);
 }
 
  function clean(){
@@ -128,3 +131,9 @@ function countWords(){
     $('.emoji-list').hide();
     $('#emoji_sparkle').show();
  }
+
+ function onObject(){
+   $('.emoji-list').hide();
+   $('#real_object_emojis').show();
+ }
+
